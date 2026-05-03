@@ -1,0 +1,58 @@
+REGRAS DE ASSOCIAÇÃO - FP-GROWTH
+============================================================
+
+{short mauricinho italicomar prata} → {camisa regata}
+Suporte: 0.0052
+Confiança: 0.4407
+Lift: 23.64
+----------------------------------------
+{camisa manga longa lisa moda infantil} → {mijão aberto liso moda infantil}
+Suporte: 0.0048
+Confiança: 0.4211
+Lift: 22.35
+----------------------------------------
+{camiseta bichinhos moda} → {short algodão elastico liso}
+Suporte: 0.0048
+Confiança: 0.3333
+Lift: 15.99
+----------------------------------------
+{short zafirinha} → {regata canelada mania visual ld cl}
+Suporte: 0.0104
+Confiança: 0.4643
+Lift: 14.21
+----------------------------------------
+{regata canelada mania visual ld cl} → {short zafirinha}
+Suporte: 0.0104
+Confiança: 0.3190
+Lift: 14.21
+----------------------------------------
+{bermuda tactel cordao} → {regata machao}
+Suporte: 0.0052
+Confiança: 0.5000
+Lift: 14.18
+----------------------------------------
+{calcinha estampada} → {calcinha algodão lisa}
+Suporte: 0.0112
+Confiança: 0.5045
+Lift: 12.05
+----------------------------------------
+{short algodão elastico liso} → {camiseta bordada algodão}
+Suporte: 0.0108
+Confiança: 0.5192
+Lift: 11.89
+----------------------------------------
+{short juvenil naclefs moda fashion} → {regata canelada mania visual ld cl}
+Suporte: 0.0090
+Confiança: 0.3516
+Lift: 10.76
+----------------------------------------
+{camiseta bichinhos moda} → {camiseta bordada algodão}
+Suporte: 0.0056
+Confiança: 0.3889
+Lift: 8.90
+----------------------------------------
+{calcinha tanga fofinha sg} → {calcinha algodão lisa}
+Suporte: 0.0076
+Confiança: 0.3276
+Lift: 7.82
+----------------------------------------
