@@ -3,13 +3,10 @@ import re
 import os
 
 def limpar_item(item):
-    """
-    Remove marcas, números, palavras comuns e padroniza o item.
-    """
+    
     if not isinstance(item, str):
         return ""
     
-    # Remove palavras comuns (marcas, indicadores)
     palavras_remover = [
         'MIC', 'KIDS', 'BABY', 'FEM', 'MASC', 'UNISSEX', 'TAG', 'PARES',
         'NO', 'COM', 'C', 'DE', 'A', 'E', 'O', 'DA', 'DO', 'DAS', 'DOS',
@@ -18,14 +15,11 @@ def limpar_item(item):
         'ITALICO', 'SERGIO', 'MODAS', 'DIFERENTE', 'MONTANHA', 'RUSSA'
     ]
     
-    # Remove números
     item = re.sub(r'[0-9]+', '', item)
     
-    # Remove palavras específicas
     for palavra in palavras_remover:
         item = re.sub(rf'\b{palavra}\b', '', item, flags=re.IGNORECASE)
     
-    # Remove caracteres especiais e espaços extras
     item = re.sub(r'[^\w\s]', '', item)
     item = re.sub(r'\s+', ' ', item).strip()
     

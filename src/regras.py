@@ -1,5 +1,4 @@
 def suporte(conjunto, transacoes):
-    """Calcula o suporte de um conjunto de itens"""
     if not conjunto:
         return 0
     contagem = 0
@@ -9,7 +8,6 @@ def suporte(conjunto, transacoes):
     return contagem / len(transacoes)
 
 def confianca(antecedente, consequente, transacoes):
-    """Calcula a confiança de uma regra"""
     ambos = antecedente.union(consequente)
     sup_ambos = suporte(ambos, transacoes)
     sup_ant = suporte(antecedente, transacoes)
@@ -18,7 +16,6 @@ def confianca(antecedente, consequente, transacoes):
     return sup_ambos / sup_ant
 
 def lift(antecedente, consequente, transacoes):
-    """Calcula o lift de uma regra"""
     conf = confianca(antecedente, consequente, transacoes)
     sup_conseq = suporte(consequente, transacoes)
     if sup_conseq == 0:
